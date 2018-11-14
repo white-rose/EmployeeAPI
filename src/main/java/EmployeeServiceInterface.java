@@ -6,6 +6,6 @@ public interface EmployeeServiceInterface {
     Employee getEmployeeById(long employeeId);
     Boolean addEmployee(Employee employee);
     void updateEmployee(Employee employee);
-    void deleteEmployee(Employee employee);
+    void deleteEmployee(Long uuid);
 
 }

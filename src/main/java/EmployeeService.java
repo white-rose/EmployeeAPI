@@ -41,8 +41,8 @@ public class EmployeeService implements EmployeeServiceInterface {
     }
 
     @Override
-    public void deleteEmployee(Employee employee) {
-        employeeRepository.delete(employee);
+    public void deleteEmployee(Long uuid) {
+        employeeRepository.delete(getEmployeeById(uuid));
     }
 
 }
