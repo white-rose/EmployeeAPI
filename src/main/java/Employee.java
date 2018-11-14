@@ -10,7 +10,7 @@ public class Employee implements Serializable {
 
     @Id
     @Column(name="UUID")
-    private String UUID;
+    private Long UUID;
 
     @Column(name="firstName")
     private String firstName;
@@ -20,11 +20,11 @@ public class Employee implements Serializable {
 
     @Id
     @Column(name="UUID")
-    public String getUUID() {
+    public Long getUUID() {
         return UUID;
     }
 
-    public void setUUID(String UUID) {
+    public void setUUID(Long UUID) {
         this.UUID = UUID;
     }
 
